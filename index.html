@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minsktrans</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://unpkg.com/vue@2.2.2"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkDheIOn11u9qotCdteu2pcwPBYO1Xa4Y&callback=initMap"></script>
+	</head>
+	<body>
+		<div id="listRoutes">
+			<h3>Маршруты автобусов</h3>
+			<p v-for="item in dataRoutes" class="routes" ><span class="numberRoute">{{item.numberRoute}}</span>  <span class="nameRoute" @click="showRoutes($event)">{{item.nameRoute}}</span></p>
+		</div>
+		<div id="map"></div>
+		<script src="script.js"></script>
+	</body>
+</html>

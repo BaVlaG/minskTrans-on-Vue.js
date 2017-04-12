@@ -1,0 +1,60 @@
+
+html,
+body,
+#app{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#listRoutes{
+	width:30%;
+	float:left;
+	overflow:auto;
+	height:100%;
+
+}
+
+h3 {
+	width: 100%;
+	text-align: center;
+	text-decoration: underline;
+	background-color:#eeeeee;
+	color:crimson;
+	margin:0;
+	padding:15px 0;
+}
+
+.routes{
+	padding-left:10px;
+	margin:5px 0;
+	color:blue;
+}
+
+.routes .numberRoute{
+	display:inline-block;
+	min-width:2em;
+	text-align:center;
+	background-color:crimson;
+	color:white;
+	margin-right:10px;
+}
+
+.routes:nth-child(odd){
+	background-color:#eeeeee;
+}
+
+.nameRoute:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+#map {
+	height: 100%;
+	width:70%;
+	margin-left:30%;
+}
+
+.empty{
+	clear:both;
+}
